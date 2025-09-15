@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum CSS Profesional</title>
+  <style>
+    /* GLOBAL STYLE */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin: 5px 0 0; font-size: 16px; }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      color: #0077b6;
+      font-size: 22px;
+    }
+
+    /* TEXT & FONT */
+    .teks1 {color:#d62828; text-align:left;}
+    .teks2 {color:#003049; text-align:center; text-decoration:underline;}
+    .teks3 {color:#2a9d8f; text-align:right; text-transform:uppercase;}
+    .font1 {font: italic 15px Arial;}
+    .font2 {font: bold 18px "Times New Roman";}
+
+    /* LIST */
+    ul.square {list-style-type:square; padding-left: 25px;}
+    ol.roman {list-style-type:upper-roman; padding-left: 25px;}
+
+    /* LINK */
+    a {text-decoration:none; font-weight:500;}
+    a:link {color:#0077b6;}
+    a:visited{color:#6a4c93;}
+    a:hover {color:#d62828; text-decoration:underline;}
+    a:active{color:#2a9d8f;}
+
+    /* TABLE */
+    table {
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    th, td {
+      border:1px solid #ddd; 
+      padding:10px; 
+      text-align:center;
+    }
+    th {
+      background:#0077b6; 
+      color:#fff;
+    }
+    tr:nth-child(even) {background:#f8f9fa;}
+
+    /* BOX MODEL */
+    .container {
+      background:#0077b6;
+      width:400px; 
+      height:250px;
+      margin:20px auto;
+      padding:15px;
+      border-radius:10px;
+      color:white;
+      text-align:center;
+    }
+    .artikel-box {
+      background:#caf0f8;
+      color:#333;
+      margin:10px; 
+      padding:15px;
+      border:2px dashed #0077b6;
+      border-radius:8px;
+    }
+    .gbr {
+      width:200px;
+      margin:15px;
+      border:4px solid #333;
+      outline:4px solid #90e0ef;
+      border-radius:10px;
+    }
+
+    footer {
+      text-align:center;
+      padding:15px;
+      background:#023e8a;
+      color:white;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Praktikum CSS</h1>
+  <p>Basic Element Styling & CSS Box Model</p>
+</header>
+
+<main>
+  <section>
+    <h2>Text & Font Styling</h2>
+    <p class="teks1">Teks rata kiri berwarna merah</p>
+    <p class="teks2">Teks tengah dengan garis bawah</p>
+    <p class="teks3">Teks kanan huruf kapital</p>
+    <p class="font1">Contoh font Arial miring</p>
+    <p class="font2">Contoh font Times tebal</p>
+  </section>
+
+  <section>
+    <h2>List Styling</h2>
+    <ul class="square"><li>Item A</li><li>Item B</li></ul>
+    <ol class="roman"><li>Item 1</li><li>Item 2</li></ol>
+  </section>
+
+  <section>
+    <h2>Link Styling</h2>
+    <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a></p>
+  </section>
+
+  <section>
+    <h2>Table Styling</h2>
+    <table>
+      <tr><th>Nama</th><th>Alamat</th><th>Telp</th></tr>
+      <tr><td>DIAMOND Studio</td><td>Jakarta</td><td>08123</td></tr>
+      <tr><td>Web Dev</td><td>Bandung</td><td>08234</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Box Model</h2>
+    <div class="container">
+      <div class="artikel-box">Artikel dengan margin, border, dan padding</div>
+    </div>
+    <div style="text-align:center;">
+      <img class="gbr" src="https://getwallpapers.com/wallpaper/full/0/d/7/938258-large-guns-n-roses-wallpapers-1920x1200-4k.jpg
+      " alt="gambar">
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Praktikum CSS - DIAMOND Studio
+</footer>
+
+</body>
+</html>
+    
